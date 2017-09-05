@@ -2,5 +2,5 @@
 FROM centos:centos7
 MAINTAINER Lev Goncharov <lev@goncharov.xyz>
 RUN yum clean all && \
-    yum -y install rpm-build make curl tar git
+    yum -y install rpm-build make curl tar git ruby
 RUN mkdir -pv ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
